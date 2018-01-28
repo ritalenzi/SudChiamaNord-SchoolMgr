@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchKidNameLabel"
+        android:id="@+id/searchKidNameLabel"
+        android:layout_marginTop="30dp"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/searchKidNameLabel"
+        android:inputType="textCapSentences"
+        android:ems="10"
+        android:id="@+id/searchKidNameEditText"
+        android:layout_below="@+id/searchKidNameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchKidLastnameLabel"
+        android:id="@+id/searchKidLastnameLabel"
+        android:layout_below="@+id/searchKidNameEditText"
+        android:layout_marginTop="30dp"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/searchKidLastnameLabel"
+        android:inputType="textCapSentences"
+        android:ems="10"
+        android:id="@+id/searchKidLastnameEditText"
+        android:layout_below="@+id/searchKidLastnameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchKidNicknameLabel"
+        android:id="@+id/searchKidNicknameLabel"
+        android:layout_below="@+id/searchKidLastnameEditText"
+        android:layout_marginTop="30dp"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/searchKidNicknameLabel"
+        android:inputType="textCapSentences"
+        android:ems="10"
+        android:id="@+id/searchKidNicknameEditText"
+        android:layout_below="@+id/searchKidNicknameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchKidNameButton"
+        android:text="@string/searchButtonLabel"
+        android:onClick="searchKidName"
+        android:layout_below="@+id/searchKidNicknameEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

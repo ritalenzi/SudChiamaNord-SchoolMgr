@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/statusIndicator"
+        android:layout_width="20dp"
+        android:layout_height="130dp"
+        android:enabled="false"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/searchResPhotoThumbnail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/statusIndicator"
+        android:layout_toEndOf="@+id/statusIndicator"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchResKidName"
+        android:layout_toRightOf="@+id/searchResPhotoThumbnail"
+        android:layout_toEndOf="@+id/searchResPhotoThumbnail"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchResKidStatus"
+        android:layout_below="@+id/searchResKidName"
+        android:layout_toRightOf="@+id/searchResPhotoThumbnail"
+        android:layout_toEndOf="@+id/searchResPhotoThumbnail"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchResCreatedDate"
+        android:layout_below="@+id/searchResKidStatus"
+        android:layout_toRightOf="@+id/searchResPhotoThumbnail"
+        android:layout_toEndOf="@+id/searchResPhotoThumbnail"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchResSchool"
+        android:layout_below="@+id/searchResCreatedDate"
+        android:layout_toRightOf="@+id/searchResPhotoThumbnail"
+        android:layout_toEndOf="@+id/searchResPhotoThumbnail"
+        android:textSize="18dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchResClass"
+        android:layout_below="@+id/searchResSchool"
+        android:layout_toRightOf="@+id/searchResPhotoThumbnail"
+        android:layout_toEndOf="@+id/searchResPhotoThumbnail"
+        android:textSize="18dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

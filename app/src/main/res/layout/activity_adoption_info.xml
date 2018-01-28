@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adoptionInfoLabel"
+        android:text="@string/adoptionInfoLabel"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adPaymentIdLabel"
+        android:text="@string/adPaymentIdLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/adoptionInfoLabel"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adPaymentIdValue"
+        android:layout_alignTop="@+id/adPaymentIdLabel"
+        android:layout_toRightOf="@+id/adPaymentIdLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adClassLabel"
+        android:text="@string/adClassLabel"
+        android:textSize="18dp"
+        android:layout_below="@+id/adPaymentIdLabel"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adClassValue"
+        android:layout_alignTop="@+id/adClassLabel"
+        android:layout_toRightOf="@+id/adClassLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adCodeLabel"
+        android:text="@string/adCodeLabel"
+        android:textSize="18dp"
+        android:layout_below="@+id/adClassLabel"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adCodeValue"
+        android:layout_alignTop="@+id/adCodeLabel"
+        android:layout_toRightOf="@+id/adCodeLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adSchoolIdLabel"
+        android:text="@string/adSchoolIdLabel"
+        android:textSize="18dp"
+        android:layout_below="@+id/adCodeLabel"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adSchoolIdValue"
+        android:layout_alignTop="@+id/adSchoolIdLabel"
+        android:layout_toRightOf="@+id/adSchoolIdLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adSchoolNameLabel"
+        android:text="@string/adSchoolNameLabel"
+        android:textSize="18dp"
+        android:layout_below="@+id/adSchoolIdLabel"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adSchoolNameValue"
+        android:layout_alignTop="@+id/adSchoolNameLabel"
+        android:layout_toRightOf="@+id/adSchoolNameLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adSchoolCityLabel"
+        android:text="@string/adSchoolCityLabel"
+        android:textSize="18dp"
+        android:layout_below="@+id/adSchoolNameLabel"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adSchoolCityValue"
+        android:layout_alignTop="@+id/adSchoolCityLabel"
+        android:layout_toRightOf="@+id/adSchoolCityLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adPrefixLabel"
+        android:text="@string/adPrefixLabel"
+        android:textSize="18dp"
+        android:layout_below="@+id/adSchoolCityLabel"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adPrefixValue"
+        android:layout_alignTop="@+id/adPrefixLabel"
+        android:layout_toRightOf="@+id/adPrefixLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adopterIdLabel"
+        android:text="@string/adopterIdLabel"
+        android:textSize="18dp"
+        android:layout_below="@+id/adPrefixLabel"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adopterIdValue"
+        android:layout_alignTop="@+id/adopterIdLabel"
+        android:layout_toRightOf="@+id/adopterIdLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adopterNameLabel"
+        android:text="@string/adopterNameLabel"
+        android:textSize="18dp"
+        android:layout_below="@+id/adopterIdLabel"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adopterFullNameValue"
+        android:layout_alignTop="@+id/adopterNameLabel"
+        android:layout_toRightOf="@+id/adopterNameLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adYearLabel"
+        android:text="@string/adoptionYearLabel"
+        android:textSize="18dp"
+        android:layout_below="@+id/adopterNameLabel"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adYearValue"
+        android:layout_alignTop="@+id/adYearLabel"
+        android:layout_toRightOf="@+id/adYearLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="false"
+        android:focusable="false" />
+
+
+</RelativeLayout>

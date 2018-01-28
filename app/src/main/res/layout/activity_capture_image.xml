@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/preview"
+        android:layout_above="@+id/capturePhotoButton"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/capturePhotoButton"
+        android:layout_gravity="center_horizontal"
+        android:drawableTop="@drawable/set2_camera_icon_64"
+        android:background="@drawable/roundedbutton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/okPhotoButton"
+        android:drawableTop="@drawable/set2_ok_icon_64"
+        android:background="@drawable/roundedbutton"
+        android:layout_alignTop="@+id/capturePhotoButton"
+        android:layout_toRightOf="@+id/capturePhotoButton"
+        android:layout_toEndOf="@+id/capturePhotoButton"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/cancelPhotoButton"
+        android:drawableTop="@drawable/set2_cancel_icon_64"
+        android:background="@drawable/roundedbutton"
+        android:layout_alignTop="@+id/capturePhotoButton"
+        android:layout_toLeftOf="@+id/capturePhotoButton"
+        android:layout_toStartOf="@+id/capturePhotoButton"
+        android:visibility="invisible" />
+
+</RelativeLayout>

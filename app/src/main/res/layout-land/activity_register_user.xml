@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/serverRegisterUser"
+        android:hint="@string/loginUser"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/serverRegisterPassword"
+        android:hint="@string/loginPassword"
+        android:layout_below="@+id/serverRegisterUser"
+        android:layout_alignLeft="@+id/serverRegisterUser"
+        android:layout_alignStart="@+id/serverRegisterUser" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginShowPassword"
+        android:id="@+id/serverRegisterShowPassword"
+        android:layout_below="@+id/serverRegisterPassword"
+        android:layout_alignLeft="@+id/serverRegisterPassword"
+        android:layout_alignStart="@+id/serverRegisterPassword"
+        android:layout_marginTop="30dp"
+        android:layout_alignRight="@+id/serverRegisterPassword"
+        android:layout_alignEnd="@+id/serverRegisterPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/serverRegisterButton"
+        android:id="@+id/serverRegisterButton"
+        android:onClick="registerUser"
+        android:layout_alignBottom="@+id/serverRegisterPassword"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="79dp"
+        android:layout_marginEnd="79dp" />
+
+</RelativeLayout>

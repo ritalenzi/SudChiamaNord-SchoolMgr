@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adoptionIdLabel"
+        android:text="@string/adoptionIdLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adoptionIdValue"
+        android:layout_alignTop="@+id/adoptionIdLabel"
+        android:layout_toRightOf="@+id/adoptionIdLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adoptionYearLabel"
+        android:text="@string/adoptionYearLabel"
+        android:layout_below="@+id/adoptionIdLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adoptionYearValue"
+        android:layout_alignTop="@+id/adoptionYearLabel"
+        android:layout_toRightOf="@+id/adoptionYearLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adopterLabel"
+        android:text="@string/adopterLabel"
+        android:layout_below="@+id/adoptionYearLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adopterNameValue"
+        android:layout_alignTop="@+id/adopterLabel"
+        android:layout_toRightOf="@+id/adopterLabel"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adopterLastnameValue"
+        android:layout_alignTop="@+id/adopterLabel"
+        android:layout_toRightOf="@+id/adopterNameValue"
+        android:textSize="18dp"
+        android:layout_marginLeft="10dp" />
+
+
+</RelativeLayout>

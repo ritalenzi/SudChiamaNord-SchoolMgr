@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">SchoolMgr</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_save_changes">Save changes</string>
+    <string name="action_discard_changes">Discard changes</string>
+    <string name="action_delete">Delete</string>
+    <string name="backupSettings">Backup</string>
+    <string name="loadSettings">Load</string>
+
+    <string name="generalError">Error</string>
+    <string name="generalWarning">Warning</string>
+    <string name="generalInfo">Info</string>
+    <string name="unknown">Unknown</string>
+
+    <string name="loginUser">User</string>
+    <string name="loginPassword">Password</string>
+    <string name="loginRememberUserAndPassword">Remember</string>
+    <string name="loginButton">Login</string>
+    <string name="nullUserAndPwMsg">Specify username and password</string>
+    <string name="wrongUser">Wrong user. Make sure you registered this user with the server before continuing</string>
+    <string name="wrongPassword">Wrong password</string>
+    <string name="successfulLogin">Successfully logged in</string>
+
+    <string name="searchButton">Search</string>
+    <string name="addButton">Add</string>
+    <string name="downloadButton">Download</string>
+    <string name="uploadButton">Upload</string>
+    <string name="configureButton">Configure</string>
+
+    <string name="nameLabel">Name</string>
+    <string name="firstnameLabel">First Name</string>
+    <string name="secondNameLabel">Middle Name</string>
+    <string name="lastnameLabel">Lastname</string>
+    <string name="statusLabel">Status</string>
+    <string name="adoptionsDetailsButton">DETAILS</string>
+    <string name="adoptedLabel">Currently adopted</string>
+    <string name="notAdoptedLabel">Currently not adopted</string>
+    <string name="unknownAdoptionStatusLabel">Unknown adoption</string>
+    <string name="changePictureButtonLabel">CHANGE</string>
+    <string name="deletePictureButtonLabel">DELETE</string>
+    <string name="birthdayLabel">Birthday</string>
+    <string name="schoolCodeLabel">School Code</string>
+    <string name="schoolNameLabel">School Name</string>
+    <string name="classLabel">Class</string>
+    <string name="yearLabel">Year</string>
+    <string name="addressLabel">Address</string>
+    <string name="cityLabel">City</string>
+    <string name="phoneLabel">Phone</string>
+    <string name="jobLabel">Job</string>
+    <string name="dadInfoLabel">Dad\'s info</string>
+    <string name="momInfoLabel">Mom\'s info</string>
+    <string name="schoolInfoLabel">School\'s info</string>
+    <string name="creatorLabel">Record creation\'s info</string>
+    <string name="createdByLabel">Created by</string>
+    <string name="createdOnDateLabel">Creation date</string>
+    <string name="notesLabel">Notes</string>
+    <string name="discardChangesDialogTitle">Discard changes</string>
+    <string name="discardChangesDialogMessage">Do you really want to discard this changes?</string>
+    <string name="nullKidName">No kid first name or last name has been specified</string>
+
+    <string name="photoLoadingError">Problem in loading the captured picture</string>
+    <string name="photoSavingError">Problem in saving the captured picture on the device</string>
+
+    <string name="serverLabel">Server Address</string>
+    <string name="updateLabel">Update</string>
+    <string name="serverNoUserRegisteredLabel">The user is not registered with the server. No download or upload possible at the moment</string>
+    <string name="serverUserRegisteredLabel">The user is registered. Download and upload are possible</string>
+    <string name="serverRegisterNewUserButton">Register a new user</string>
+    <string name="serverRegisterButton">Register</string>
+    <string name="noServerAddressError">No server address. Specify one before proceeding</string>
+    <string name="serverAddressUpdateError">Impossible to update the server address</string>
+    <string name="serverAddressCorrectlyUpdated">Correctly updated the server address</string>
+
+    <string name="confFileReadError">Impossible to load the configuration (server address or authentication info)</string>
+    <string name="fileSaveError">Impossible to save the file</string>
+    <string name="configFileUpdateError">Impossible to update the configuration file</string>
+
+    <string name="serverRegistrationUser">User</string>
+    <string name="serverRegistrationPassword">Password</string>
+    <string name="loginShowPassword">Show password</string>
+    <string name="registerUserSuccessful">Successfully registered the user with the server</string>
+    <string name="registerUserFailed">Impossible to register the user with the server</string>
+    <string name="registerUserDialogTitle">Wait</string>
+    <string name="registerUserDialogExpl">Registering the user with the server…</string>
+
+    <string name="noDownloadServerAddressError">Impossible to perform the information download: no server address has been set. Specify it in the "Configure" menu before continuing</string>
+    <string name="noDownloadSessionKeyError">Impossible to perform the information download: no session is open with the server. Register the user in the "Configure" menu before continuing</string>
+    <string name="noDownloadSchoolYearError">Impossible to perform the information download: no active school year has been received from the server</string>
+    <string name="startDownloadAlert">Do you want to download the information currently on the server? The information of your device will be overridden. To avoid losing it, perform an upload first</string>
+    <string name="downloadSuccessful">Kids info successfully downloaded from the server</string>
+    <string name="imageDownloadFailed">The image download has failed</string>
+    <string name="imageDownloadSuccessful">Successfully downloaded the image</string>
+    <string name="downloadResults">Number of info correctly downloaded: </string>
+    <string name="downloadDialogTitle">Wait</string>
+    <string name="downloadDialogExpl">Downloading the info from the server…</string>
+
+    <string name="searchDialogTitle">Wait</string>
+    <string name="searchDialogExpl">Querying the local database for the kids info…</string>
+    <string name="noCurrentUserError">No current user has been set. Perform a login before continuing</string>
+    <string name="userNotLoggedInError">The user is not logged in. Impossible to perform the task</string>
+
+    <string name="adoptionListLabel">ADOPTIONS LIST</string>
+
+    <string name="adoptionIdLabel">Adoption ID</string>
+    <string name="adoptionYearLabel">Year</string>
+    <string name="adopterLabel">Adopter</string>
+
+    <string name="adoptionInfoLabel">ADOPTION INFO</string>
+    <string name="adPaymentIdLabel">Payment ID</string>
+    <string name="adClassLabel">Class</string>
+    <string name="adCodeLabel">Adoption Code</string>
+    <string name="adSchoolIdLabel">School Code</string>
+    <string name="adSchoolNameLabel">School Name</string>
+    <string name="adSchoolCityLabel">School City</string>
+    <string name="adPrefixLabel">Adoption Prefix for the School</string>
+    <string name="adopterIdLabel">Adopter ID</string>
+    <string name="adopterNameLabel">Adopter</string>
+
+    <string name="saveInfoDialogTitle">Wait</string>
+    <string name="saveInfoDialogExpl">Saving the new info on the device…</string>
+    <string name="dbUpdateSuccessful">Data successfully updated</string>
+    <string name="dbUpdateFail">Failed to update the data</string>
+
+    <string name="backupFile">Data saved on file: </string>
+    <string name="backupDialogTitle">Wait</string>
+    <string name="backupDialogExpl">Backing up the local database on file…</string>
+    <string name="backupFailed">Impossible to backup the data</string>
+
+    <string name="searchAllTabTitle">All</string>
+    <string name="searchKidInfoTabTitle">Kid Info</string>
+    <string name="searchAdoptionCodeTabTitle">Adoption Code</string>
+    <string name="searchAdopterTabTitle">Adopter</string>
+    <string name="searchButtonLabel">Search</string>
+    <string name="searchKidNameLabel">Kid First Name</string>
+    <string name="searchKidLastnameLabel">Kid Last Name</string>
+    <string name="searchKidNicknameLabel">Kid Nickname</string>
+    <string name="searchAdoptionCodeLabel">Adoption Code</string>
+    <string name="searchAdopterFirstNameLabel">Adopter First Name</string>
+    <string name="searchAdopterLastnameLabel">Adopter Last Name</string>
+
+    <string name="createdDateLabel">Created</string>
+
+    <string name="selectPicture">Take or Select Picture</string>
+
+    <string name="loadedInfoMessage">Number of kid info loaded: </string>
+    <string name="loadDialogTitle">Wait</string>
+    <string name="loadDialogExpl">Loading the info from the device…</string>
+    <string name="storeInDBDialogExpl">Storing the info from the device…</string>
+    <string name="loadFailed">Impossible to load the info</string>
+    <string name="selectFileMessage">Select a File to Open</string>
+    <string name="noFileManagerError">Please install a File Manager</string>
+    <string name="startLoadAlert">Do you want to load previous information? The current information will be overridden. To avoid losing it, perform an upload first</string>
+
+    <string name="photoPreviewError">Impossible to load the image</string>
+
+    <string name="confirmDeleteKidInfo">Do you want do delete this kid?</string>
+
+    <string name="deleteInfoDialogTitle">Wait</string>
+    <string name="deleteInfoDialogExpl">Deleting the kid info from the device…</string>
+    <string name="deleteSuccess">Info successfully deleted</string>
+    <string name="deleteFailed">Impossible to delete the info</string>
+
+</resources>

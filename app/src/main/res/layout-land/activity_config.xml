@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/serverLabel"
+            android:id="@+id/serverLabel"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="39dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/serverEditText"
+            android:layout_below="@+id/serverLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/updateLabel"
+            android:id="@+id/updateServerAddrButton"
+            android:layout_below="@+id/serverEditText"
+            android:layout_centerHorizontal="true"
+            android:onClick="updateServerAddress"/>
+
+        <!--ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/serverUserRegisteredImageView"
+            android:layout_below="@+id/updateServerAddrButton"
+            android:layout_marginTop="47dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/serverNoUserRegisteredLabel"
+            android:id="@+id/serverUserRegisteredTextView"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/serverUserRegisteredImageView"
+            android:layout_toRightOf="@+id/serverUserRegisteredImageView" /-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/serverRegisterNewUserButton"
+            android:id="@+id/button"
+            android:onClick="registerUser"
+            android:layout_below="@+id/updateServerAddrButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+</ScrollView>
