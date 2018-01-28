@@ -133,7 +133,7 @@ public class LoadOps
 //                    Log.d (TAG, "Image file " + ze.getName());
                     byte[] imageData = baf.toByteArray();
 //                    Log.d (TAG, "Image file " + ze.getName() + " as bytes");
-                    Bitmap bitmap = BitmapFactory.decodeByteArray(imageData, 0, imageData.length);
+                    Bitmap bitmap = BitmapFactory.decodeByteArray (imageData, 0, imageData.length);
                     fos = mActivity.get().openFileOutput (ze.getName(), Context.MODE_PRIVATE);
                     bitmap.compress(Bitmap.CompressFormat.JPEG, 100, fos);
                     fos.close();

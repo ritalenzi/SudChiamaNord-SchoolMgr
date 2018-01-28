@@ -24,9 +24,9 @@ public class LoadActivity extends Activity
     @Override
     protected void onCreate (Bundle savedInstanceState)
     {
-        super.onCreate(savedInstanceState);
-        setTheme(android.R.style.Theme_Holo_Light_DarkActionBar);
-        setContentView(R.layout.activity_load);
+        super.onCreate (savedInstanceState);
+        setTheme (android.R.style.Theme_Holo_Light_DarkActionBar);
+        setContentView (R.layout.activity_load);
 
         mOpProgressDialog = new BarProgressDialog (LoadActivity.this);
 
@@ -36,15 +36,16 @@ public class LoadActivity extends Activity
                 .setPositiveButton (android.R.string.yes, new DialogInterface.OnClickListener()
                 {
                     public void onClick (DialogInterface dialog, int which) {
-                        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                        intent.setType("application/zip");
-                        intent.addCategory(Intent.CATEGORY_OPENABLE);
+                        Intent intent = new Intent (Intent.ACTION_GET_CONTENT);
+                        intent.setType ("application/zip");
+                        intent.addCategory (Intent.CATEGORY_OPENABLE);
 
                         try {
                             startActivityForResult (Intent.createChooser (intent,
                                             getString (R.string.selectFileMessage)),
                                     Tags.FILE_SELECT_REQUEST);
-                        } catch (android.content.ActivityNotFoundException ex) {
+                        }
+                        catch (android.content.ActivityNotFoundException ex) {
                             showDialog (R.string.generalError, getString (R.string.noFileManagerError),
                                     android.R.drawable.ic_dialog_alert);
                         }
@@ -115,7 +116,7 @@ public class LoadActivity extends Activity
     {
         mOpProgressDialog.dismiss();
         String message = getString (R.string.loadedInfoMessage) + nKidsInfo;
-        showDialog(R.string.generalInfo, message, android.R.drawable.ic_dialog_info);
+        showDialog (R.string.generalInfo, message, android.R.drawable.ic_dialog_info);
     }
 
     public void notifyFailedLoad (int message)

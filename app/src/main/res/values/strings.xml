@@ -161,4 +161,9 @@
     <string name="deleteSuccess">Info successfully deleted</string>
     <string name="deleteFailed">Impossible to delete the info</string>
 
+    <string name="btnBackup">Backup</string>
+    <string name="rbAllData">All data</string>
+    <string name="rbBackupToday">Today\'s data</string>
+    <string name="rbBackupSince">Data since:</string>
+
 </resources>

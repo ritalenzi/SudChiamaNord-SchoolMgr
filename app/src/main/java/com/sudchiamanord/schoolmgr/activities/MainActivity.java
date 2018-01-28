@@ -63,9 +63,9 @@ public class MainActivity extends LifecycleLoggingActivity
         switch (item.getItemId()) {
 
             case R.id.action_backup:
-                if (!checkLogin()) {
-                    return true;
-                }
+//                if (!checkLogin()) {  // TODO: ADD THIS BACK
+//                    return true;
+//                }
 
                 Intent intent = new Intent (this, BackupActivity.class);
                 intent.putExtra (Tags.CURRENT_USER, mUser);

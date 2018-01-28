@@ -557,10 +557,10 @@ public class KidInfoActivity extends FragmentActivity
         args.putInt ("year", year);
         args.putInt ("month", month);
         args.putInt ("day", day);
-        date.setArguments(args);
+        date.setArguments (args);
 
-        date.setCallBack(callback);
-        date.show(getSupportFragmentManager(), "Date Picker");
+        date.setCallBack (callback);
+        date.show (getSupportFragmentManager(), "Date Picker");
     }
 
     DatePickerDialog.OnDateSetListener callback = new DatePickerDialog.OnDateSetListener()

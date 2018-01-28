@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</LinearLayout>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rgBackup">
+
+        <RadioButton
+            android:text="@string/rbAllData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbBackupAllData"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:text="@string/rbBackupToday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbBackupToday"
+            android:layout_marginTop="13dp"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:text="@string/rbBackupSince"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbBackupSince"
+            android:layout_marginTop="17dp"
+            android:onClick="onRadioButtonClicked" />
+
+    </RadioGroup>
+
+    <Button
+        android:text="@string/btnBackup"
+        android:layout_centerInParent="true"
+        android:onClick="backup"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBackup" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:ems="10"
+        android:id="@+id/txtBackupSince"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_below="@+id/rgBackup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
