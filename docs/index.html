@@ -120,6 +120,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/tag-manager</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -140,8 +142,6 @@ Error message and password prompt
 
 <li>$:/temp/info-plugin</li>
 
-<li>$:/temp/NewTagName</li>
-
 <li>$:/temp/search</li>
 
 <li>$:/themes/tiddlywiki/snowwhite</li>
@@ -153,8 +153,6 @@ Error message and password prompt
 <li>ConfigActivity</li>
 
 <li>DownloadActivity</li>
-
-<li>Draft of 'MainActivity'</li>
 
 <li>GettingStarted</li>
 
@@ -176,6 +174,9 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20180128161444641" modified="20180128161444641" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/tag-manager">
+<pre>show</pre>
+</div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.15">
 <pre>{
     &quot;tiddlers&quot;: {
@@ -8456,13 +8457,13 @@ Error message and password prompt
 <div created="20180128011253274" modified="20180128011641757" title="$:/state/image-picker/system-117823591">
 <pre>show</pre>
 </div>
-<div created="20180128020333815" modified="20180128020333815" title="$:/state/showeditpreview">
+<div created="20180128020333815" modified="20180128161538131" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
 <div created="20180128012232667" modified="20180128020531266" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div list="[[Draft of 'MainActivity']] [[Android App Code]]" title="$:/StoryList">
+<div list="[[Android App Code]] MainActivity LoginActivity" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -8510,9 +8511,6 @@ Error message and password prompt
         }
     }
 }</pre>
-</div>
-<div created="20180128020345583" modified="20180128020345583" title="$:/temp/NewTagName">
-<pre></pre>
 </div>
 <div created="20180128020609478" modified="20180128020616929" title="$:/temp/search">
 <pre></pre>
@@ -8635,16 +8633,6 @@ Error message and password prompt
 <div created="20180128015836389" modified="20180128015838744" tags="" title="DownloadActivity">
 <pre></pre>
 </div>
-<div created="20180128010217445" draft.of="MainActivity" draft.title="MainActivity" modified="20180128020825813" title="Draft of 'MainActivity'" type="text/vnd.tiddlywiki">
-<pre>* login() -&gt; LoginActivity
-* configure() -&gt; ConfigActivity
-* add() -&gt; KidInfoActivity
-* search() -&gt; SearchActivity
-* download() -&gt; DownloadActivity
-* upload() -&gt; TODO
-
-[img[screenshots/MainActivity.jpg]]</pre>
-</div>
 <div created="20180128010204732" modified="20180128010204732" title="GettingStarted">
 <pre>\define lingo-base() $:/language/ControlPanel/Basics/
 Welcome to ~TiddlyWiki and the ~TiddlyWiki community
@@ -8669,12 +8657,8 @@ See the [[control panel|$:/ControlPanel]] for more options.
 <div created="20180128015339928" modified="20180128015343295" tags="" title="LoginActivity">
 <pre></pre>
 </div>
-<div created="20180128010217445" modified="20180128020055778" tags="" title="MainActivity" type="text/vnd.tiddlywiki">
-<pre>.twocolumns
-{ display:block; -moz-column-count:2; -moz-column-gap:1em; -moz-column-
-width:50%;}
-
-* login() -&gt; LoginActivity
+<div created="20180128010217445" modified="20180128161619730" title="MainActivity" type="text/vnd.tiddlywiki">
+<pre>* login() -&gt; LoginActivity
 * configure() -&gt; ConfigActivity
 * add() -&gt; KidInfoActivity
 * search() -&gt; SearchActivity
