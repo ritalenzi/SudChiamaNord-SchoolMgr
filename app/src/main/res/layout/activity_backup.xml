@@ -5,37 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/rgBackup">
-
-        <RadioButton
-            android:text="@string/rbAllData"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rbBackupAllData"
-            android:onClick="onRadioButtonClicked" />
-
-        <RadioButton
-            android:text="@string/rbBackupToday"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rbBackupToday"
-            android:layout_marginTop="13dp"
-            android:onClick="onRadioButtonClicked" />
-
-        <RadioButton
-            android:text="@string/rbBackupSince"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rbBackupSince"
-            android:layout_marginTop="17dp"
-            android:onClick="onRadioButtonClicked" />
-
-    </RadioGroup>
-
     <Button
         android:text="@string/btnBackup"
         android:layout_centerInParent="true"
@@ -59,5 +28,40 @@
         android:layout_below="@+id/rgBackup"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rgBackup"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:text="@string/rbAllData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbBackupAllData"
+            android:onClick="onRadioButtonClicked"
+            android:checked="true" />
+
+        <RadioButton
+            android:text="@string/rbBackupToday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbBackupToday"
+            android:layout_marginTop="13dp"
+            android:onClick="onRadioButtonClicked" />
+
+        <RadioButton
+            android:text="@string/rbBackupSince"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbBackupSince"
+            android:layout_marginTop="17dp"
+            android:onClick="onRadioButtonClicked" />
+
+    </RadioGroup>
 
 </RelativeLayout>

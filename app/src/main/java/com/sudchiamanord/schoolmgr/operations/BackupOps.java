@@ -32,7 +32,8 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 /**
- * Created by rita on 1/4/16.
+ * Container for the AsyncTask that does the backup of the data
+ * @author Rita Lenzi (ritamichele.lenzi@gmail.com) - 1/4/16.
  */
 public class BackupOps
 {
@@ -42,14 +43,15 @@ public class BackupOps
 
     private WeakReference<BackupActivity> mActivity;
 
-    public BackupOps (Activity activity, String user)
+    public BackupOps (Activity activity, String user, String since)
     {
         mActivity = new WeakReference<>((BackupActivity) activity);
         mActivity.get().notifyProgressUpdate (0, R.string.backupDialogTitle,
                 R.string.backupDialogExpl);
 
-        String[] params = new String[1];
+        String[] params = new String[2];
         params[0] = user;
+        params[1] = since;
         new BackupAsyncTask().execute (params);
     }
 
@@ -61,7 +63,7 @@ public class BackupOps
         {
             Uri uri = DBContract.KidEntry.KID_CONTENT_URI;
             String[] projection = null;
-            String whereClause = null;
+            String whereClause = null
             String[] whereArgs = null;
             String sortOrder = null;
             List<KidInfo> kidsInfo = Utils.getKidInfo (mActivity.get(), new Query (uri, projection,

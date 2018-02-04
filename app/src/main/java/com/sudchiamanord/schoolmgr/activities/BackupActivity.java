@@ -30,6 +30,7 @@ public class BackupActivity extends FragmentActivity
     private static final String TAG = BackupActivity.class.getSimpleName();
 
     private RingProgressDialog mOpProgressDialog;
+    private Type mBackupType = Type.all;
 
     @Override
     protected void onCreate (Bundle savedInstanceState)
@@ -94,7 +95,7 @@ public class BackupActivity extends FragmentActivity
             date.set (Calendar.MONTH, monthOfYear);
             date.set (Calendar.DAY_OF_MONTH, dayOfMonth);
             SimpleDateFormat dateFormat = new SimpleDateFormat ("yyyy-MM-dd");
-            ((EditText) findViewById (R.id.txtBackupSince)).setText (dateFormat.format(date.getTime()));
+            ((EditText) findViewById (R.id.txtBackupSince)).setText (dateFormat.format (date.getTime()));
         }
     };
 
@@ -103,7 +104,24 @@ public class BackupActivity extends FragmentActivity
         mOpProgressDialog = new RingProgressDialog (BackupActivity.this);
 
         String user = getIntent().getStringExtra (Tags.CURRENT_USER);
-        new BackupOps (this, user);
+
+        switch (mBackupType) {
+            case all:
+                new BackupOps (this, user, null);
+                return;
+
+            case today:
+                Calendar date = Calendar.getInstance();
+                SimpleDateFormat dateFormat = new SimpleDateFormat ("yyyy-MM-dd");
+                new BackupOps (this, user, dateFormat.format (date.getTime()));
+                return;
+
+            case since:
+                new BackupOps (this, user,
+                        ((EditText) findViewById (R.id.txtBackupSince)).getText().toString());
+                return;
+        }
+
     }
 
     public void notifyProgressUpdate (int progress, int dialogTitle, int dialogExpl)
@@ -142,5 +160,12 @@ public class BackupActivity extends FragmentActivity
                 })
                 .setIcon (android.R.drawable.ic_dialog_alert)
                 .show();
+    }
+
+    enum Type
+    {
+        all,
+        today,
+        since
     }
 }
